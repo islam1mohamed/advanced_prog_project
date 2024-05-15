@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.oop_project.SignUp"
+            prefHeight="400.0" prefWidth="600.0" alignment="CENTER" spacing="30">
+    <Label text="Sign Up" style="-fx-font: 24 arial" />
+    <GridPane alignment="CENTER" hgap="20" vgap="20" >
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="Full Name"/>
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="2" text="Username"/>
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="3" text="Password"/>
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="4" text="Email" />
+        <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="name" onKeyPressed="#onNameDone"/>
+        <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="username" onKeyPressed="#onUsernameDone"/>
+        <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="password" onKeyPressed="#onPasswordDone"/>
+        <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" fx:id="email" onKeyPressed="#onEmailDone"/>
+    </GridPane>
+
+
+    <Button  alignment="CENTER"  text="Register" onAction="#onRegisterClick"/>
+    <Hyperlink text="Already have an account?" onAction="#onLoginClick"/>
+
+</VBox>

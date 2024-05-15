@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="30" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project.Login">
+    <Label style="-fx-font: 24 arial" text="Sign Up" />
+    <GridPane alignment="CENTER" hgap="20" vgap="20">
+        <Label text="Username" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label text="Password" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <TextField fx:id="username" onKeyPressed="#onUsernameDone" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField fx:id="password" onKeyPressed="#onPasswordDone" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+
+
+    <Button alignment="CENTER" onAction="#onLoginClick" text="Login" />
+    <Hyperlink onAction="#onRegisterClick" text="Don't have an account?" />
+   <Label fx:id="error" textFill="RED" />
+
+</VBox>

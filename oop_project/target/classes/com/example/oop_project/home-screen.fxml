@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="30" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project.HomeScreen">
+    <TabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="401.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="180.0">
+        <Tab text="Products">
+            <fx:include source="products.fxml" />
+        </Tab>
+        <Tab text="Cart">
+            <fx:include source="cart.fxml" />
+        </Tab>
+        <Tab text="Orders">
+            <fx:include source="orders.fxml" />
+        </Tab>
+    </TabPane>
+</VBox>
